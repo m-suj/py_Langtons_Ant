@@ -1,7 +1,7 @@
 import arcade
 
 
-DOT_SIZE = 1
+DOT_SIZE = 4
 
 
 class Ant:
@@ -10,11 +10,13 @@ class Ant:
         self.tile = (255, 255, 255)
         self.on_black_tile = False
         self.dir = [0, DOT_SIZE]
-        self.pos = [self.map.width/2, self.map.height/2]
+        self.pos = [540, 360]
         self.step_counter = 0
 
         self.speed = 1.0 / _speed
         self.counter = 0.0
+
+        self.offscreen = False
 
     def __repr__(self):
         return f'Ant <dir: {self.dir}>'
@@ -42,6 +44,8 @@ class Ant:
             self.pos[0] += self.dir[0]
             self.pos[1] += self.dir[1]
 
+        if self.pos[0] < 0 or self.pos[0] > self.map.width or self.pos[1] < 0 or self.pos[1] > self.map.height:
+            self.offscreen = True
 
 
 class Map:
@@ -68,8 +72,17 @@ class LangtonAntSimulation:
         self.map = Map()
         self.ant = Ant(self.map, _animation_speed)
 
+        self.active_process = True
+
     def update(self, dt):
-        self.ant.update(dt)
+        if not self.ant.offscreen:
+            self.ant.update(dt)
+        else:
+            self.end_process()
 
     def draw(self):
         self.map.draw()
+
+    def end_process(self):
+        self.active_process = False
+        # arcade.exit()
