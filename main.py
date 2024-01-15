@@ -1,7 +1,11 @@
 import arcade
-# import matplotlib
 from langtons_ant import LangtonAntSimulation
 from sim_settings import *
+
+
+# TODO:
+# - Ant's screen-transitioning - ant should spawn on the opposite side od screen when it reaches a border
+# - Option to run many ants with given starting positions and non-background colors at once
 
 
 class MyGame(arcade.Window):
