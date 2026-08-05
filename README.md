@@ -6,7 +6,7 @@ Projekt powstał na zaliczenie przedmiotu Programowanie w Pythonie podczas I sem
 ### Wymagania:
  - Python 3.12.x
 
-## Instalacja
+### Instalacja
 ```
 # Clone repo
 git clone https://github.com/m-suj/py_Langtons_Ant
@@ -19,6 +19,15 @@ source .venv/bin/activate # .venv\Scripts\activate.ps1 # <- Windows
 # Dependencies
 python -m pip install --upgrade pip 
 python -m pip install -r requirements.txt
+```
+
+### Uruchomienie
+```
+# Run
+python main.py
+
+# Deactivate virtual environment
+deactivate
 ```
 
 ### Opis projektu:
