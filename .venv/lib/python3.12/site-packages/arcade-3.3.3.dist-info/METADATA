@@ -1,0 +1,138 @@
+Metadata-Version: 2.4
+Name: arcade
+Version: 3.3.3
+Summary: Arcade Game Development Library
+Author-email: Paul Vincent Craven <paul@cravenfamily.com>
+License: License
+        =======
+        
+        Copyright (c) 2025 Paul Vincent Craven
+        
+        The Arcade library is licensed under the `MIT License`_.
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+        .. _MIT License: https://tldrlegal.com/license/mit-license
+Project-URL: Homepage, https://api.arcade.academy
+Project-URL: Documentation, https://api.arcade.academy/
+Project-URL: Examples, https://api.arcade.academy/en/latest/examples/index.html
+Project-URL: Issues, https://github.com/pythonarcade/arcade/issues
+Project-URL: Source, https://github.com/pythonarcade/arcade
+Project-URL: Book, https://learn.arcade.academy
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pyglet~=2.1.5
+Requires-Dist: pillow~=11.3.0
+Requires-Dist: pymunk~=6.9.0
+Requires-Dist: pytiled-parser~=2.2.9
+Provides-Extra: dev
+Requires-Dist: sphinx==8.1.3; extra == "dev"
+Requires-Dist: sphinx_rtd_theme==3.0.2; extra == "dev"
+Requires-Dist: sphinx-rtd-dark-mode==1.3.0; extra == "dev"
+Requires-Dist: sphinx-autobuild==2024.10.3; extra == "dev"
+Requires-Dist: sphinx-copybutton==0.5.2; extra == "dev"
+Requires-Dist: sphinx-sitemap==2.6.0; extra == "dev"
+Requires-Dist: sphinx-togglebutton==0.3.2; extra == "dev"
+Requires-Dist: pygments==2.19.1; extra == "dev"
+Requires-Dist: docutils==0.21.2; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pytest-mock; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: coveralls; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pyright==1.1.387; extra == "dev"
+Requires-Dist: click==8.1.7; extra == "dev"
+Requires-Dist: typer==0.12.5; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+Provides-Extra: testing-libraries
+Requires-Dist: pytest; extra == "testing-libraries"
+Requires-Dist: pytest-mock; extra == "testing-libraries"
+Requires-Dist: pytest-cov; extra == "testing-libraries"
+Requires-Dist: pyyaml==6.0.1; extra == "testing-libraries"
+
+# Welcome to The Arcade Library
+
+<p align="center">
+    <a href="https://img.shields.io/pypi/l/arcade">
+        <img alt="MIT License" title="MIT License" src="https://img.shields.io/pypi/l/arcade">
+    </a>
+    <a href="http://makeapullrequest.com">
+        <img alt="Pull Requests Welcome" title="Pull Requests Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" />
+    </a>
+    <a href="http://www.firsttimersonly.com/">
+        <img alt="First Timers Friendly" title="First Timers Friendly" src="https://img.shields.io/badge/first--timers--only-friendly-blue.svg" />
+    </a>
+</p>
+
+Arcade is an easy-to-learn Python library for creating 2D video games.
+It is ideal for beginning programmers or programmers who want to create
+2D games without learning a complex framework.
+
+[pyglet]: https://github.com/pyglet/pyglet
+[Games Made with Arcade]: https://api.arcade.academy/en/latest/community/games/sample_games.html
+Arcade is built on top of [pyglet][] and OpenGL. See [Games Made with Arcade][]
+for example game jam entries and more.
+
+[Arcade Discord Server]: https://discord.gg/ZjGDqMp
+
+<p align="center">
+    <a href="https://img.shields.io/pypi/dm/arcade">
+        <img alt="PyPI - Downloads" title="PyPI - Downloads" src="https://img.shields.io/pypi/dm/arcade">
+    </a>
+    <a href="https://img.shields.io/github/commit-activity/m/pythonarcade/arcade">
+        <img alt="GitHub Commit Activity" title="GitHub Commit Activity" src="https://img.shields.io/github/commit-activity/m/pythonarcade/arcade">
+    </a>
+    <a href="https://img.shields.io/github/contributors/pythonarcade/arcade">
+        <img alt="GitHub Contributors" title="GitHub Contributors" src="https://img.shields.io/github/contributors/pythonarcade/arcade">
+    </a>
+    <a href="https://img.shields.io/github/stars/pythonarcade/arcade">
+        <img alt="GitHub Stars" title="GitHub Stars" src="https://img.shields.io/github/stars/pythonarcade/arcade">
+    </a>
+</p>
+
+## Stable Documentation
+
+Read the stable documentation at <https://api.arcade.academy>.
+
+## Development Previews
+
+Preview the next release at <https://api.arcade.academy/en/development/>.
+
+## Citation
+
+```
+@Online{PythonArcade,
+    author = {Paul Vincent Craven},
+    title = {Easy to use Python library for creating 2D Arcade games.},
+    date = {2025-01-01},
+    publisher = {GitHub},
+    journal = {GitHub repository},
+    howpublished = {\url{https://github.com/pythonarcade/arcade}},
+    commit = {<insert hash if needed>}
+}
+```
+
+## Contact the Maintainers
+
+The best way to contact and chat with the maintainers is on the
+[Arcade Discord Server][].
+
+<paul@cravenfamily.com>

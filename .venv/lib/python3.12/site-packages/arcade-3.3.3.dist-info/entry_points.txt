@@ -1,0 +1,5 @@
+[console_scripts]
+arcade = arcade.management:execute_from_command_line
+
+[pyinstaller40]
+hook-dirs = arcade.__pyinstaller:get_hook_dirs
