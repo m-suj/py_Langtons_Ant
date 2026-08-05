@@ -3,6 +3,24 @@ Projekt powstał na zaliczenie przedmiotu Programowanie w Pythonie podczas I sem
 
 ---
 
+### Wymagania:
+ - Python 3.12.x
+
+## Instalacja
+```
+# Clone repo
+git clone https://github.com/m-suj/py_Langtons_Ant
+cd py_Langtons_Ant/
+
+# Virtual environment
+python3.12 -m venv .venv
+source .venv/bin/activate # .venv\Scripts\activate.ps1 # <- Windows
+
+# Dependencies
+python -m pip install --upgrade pip 
+python -m pip install -r requirements.txt
+```
+
 ### Opis projektu:
 Program symuluje zachowanie automatu komórkowego znanego jako problem Mrówki Langtona. Automat jest skonstruowany następująco:
  - Dana jest nieskończona dwuwymiarowa plansza, podzielona na kwadratowe komórki, z których każda może być w jednym z dwóch możliwych kolorów - białym lub czarnym.
